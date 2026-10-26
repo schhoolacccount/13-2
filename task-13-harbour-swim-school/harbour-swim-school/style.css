@@ -1,0 +1,162 @@
+/* Colours */
+:root {
+  --main-colour: #0277bd;
+  --dark-colour: #01579b;
+  --light-colour: #e1f5fe;
+  --light-text: #ffffff;
+  --body-text: #333333;
+}
+
+/* Whole page */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--body-text);
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  color: var(--main-colour);
+}
+
+/* Header */
+header {
+  background-colour: var(--main-colour);
+  padding: 10px 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--dark-colour);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 18px;
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--main-colour);
+}
+
+a {
+  outline: none;
+}
+
+nav a.active {
+  background-color: var(--light-colour);
+  color: var(--dark-colour);
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--main-colour);
+  color: var(--light-text);
+}
+
+/* Lesson cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--light-colour);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card img {
+  width: 100%;
+  height: 200 px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #4fc3f7;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 450px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-form button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--main-colour);
+  color: var(--light-text);
+  font-size: 16px;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+  background-color: var(--dark-colour);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-colour);
+  color: var(--light-text);
+  text-align: center;
+  padding: 10px;
+}
